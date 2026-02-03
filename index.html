@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Consultório Pediátrico | Pequenos Cuidados</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+:root{
+    --primary:#38bdf8;
+    --secondary:#fb7185;
+    --accent:#fde68a;
+    --dark:#0f172a;
+    --light:#fefce8;
+    --text:#334155;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--light);
+    color:var(--text);
+    scroll-behavior:smooth;
+}
+
+section{
+    padding:90px 0;
+}
+
+/* NAVBAR */
+.navbar{
+    backdrop-filter: blur(12px);
+}
+
+.navbar-brand{
+    font-weight:800;
+    color:var(--dark);
+}
+
+/* HERO */
+.hero{
+    min-height:100vh;
+    background:
+      linear-gradient(120deg, rgba(56,189,248,.95), rgba(251,113,133,.95)),
+      url("https://images.unsplash.com/photo-1580281657521-3d8b6b6a3b75") center/cover;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    padding-top:90px;
+}
+
+.hero h1 span{
+    color:var(--accent);
+}
+
+/* BOTÃO */
+.btn-primary{
+    background:var(--secondary);
+    border:none;
+    padding:16px 38px;
+    border-radius:50px;
+    font-weight:700;
+    box-shadow:0 12px 28px rgba(251,113,133,.45);
+    transition:.3s;
+}
+
+.btn-primary:hover{
+    background:#f43f5e;
+    transform:translateY(-2px);
+}
+
+/* CARDS */
+.card{
+    border:none;
+    border-radius:24px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.35s;
+    text-align:center;
+    height:100%;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card i{
+    font-size:2.8rem;
+    margin-bottom:15px;
+}
+
+/* CTA */
+.cta{
+    background:linear-gradient(120deg, var(--primary), var(--secondary));
+    color:#fff;
+}
+
+/* FORM */
+.form-control{
+    border-radius:16px;
+    padding:14px;
+}
+
+/* FOOTER */
+footer{
+    background:var(--dark);
+    color:#cbd5f5;
+    font-size:.9rem;
+}
+
+/* WHATSAPP */
+.whatsapp-fixo{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:60px;
+    height:60px;
+    background:var(--secondary);
+    color:#fff;
+    border-radius:50%;
+    font-size:28px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+    transition:.3s;
+    z-index:999;
+}
+
+.whatsapp-fixo:hover{
+    transform:scale(1.1);
+    color:#fff;
+}
+
+@media(max-width:768px){
+    section{padding:70px 20px;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#home">PEQUENOS CUIDADOS</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#diferenciais">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#servicos">Atendimentos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+<div class="container">
+<h1 class="display-4 fw-bold">
+Cuidando da <span>saúde</span> e do sorriso das crianças 💙
+</h1>
+
+<p class="lead mt-4">
+Atendimento pediátrico humanizado, acolhedor e cheio de carinho — do bebê ao adolescente.
+</p>
+
+<a href="#contato" class="btn btn-primary btn-lg mt-4">
+<i class="bi bi-heart-fill"></i> Agendar Consulta
+</a>
+</div>
+</header>
+
+<!-- DIFERENCIAIS -->
+<section id="diferenciais">
+<div class="container">
+<h2 class="fw-bold text-center mb-5">Um consultório pensado para crianças</h2>
+
+<div class="row g-4">
+<div class="col-md-4">
+<div class="card p-4">
+<i class="bi bi-emoji-smile text-warning"></i>
+<h5 class="fw-bold">Ambiente Lúdico</h5>
+<p>Espaço colorido e acolhedor para deixar a criança tranquila.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-4">
+<i class="bi bi-heart-pulse text-danger"></i>
+<h5 class="fw-bold">Atendimento Humanizado</h5>
+<p>Respeito, carinho e escuta ativa em cada consulta.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-4">
+<i class="bi bi-shield-check text-primary"></i>
+<h5 class="fw-bold">Segurança Total</h5>
+<p>Protocolos rigorosos e acompanhamento completo.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" style="background:#fff">
+<div class="container">
+<h2 class="fw-bold text-center mb-5">Atendimentos Pediátricos</h2>
+
+<div class="row g-4">
+<div class="col-md-4"><div class="card p-4"><i class="bi bi-baby text-primary"></i><h5>Puericultura</h5><p>Acompanhamento do crescimento.</p></div></div>
+<div class="col-md-4"><div class="card p-4"><i class="bi bi-thermometer-sun text-danger"></i><h5>Consultas Clínicas</h5><p>Diagnóstico e prevenção.</p></div></div>
+<div class="col-md-4"><div class="card p-4"><i class="bi bi-clipboard-heart text-success"></i><h5>Vacinação</h5><p>Carteira atualizada com segurança.</p></div></div>
+<div class="col-md-4"><div class="card p-4"><i class="bi bi-chat-dots text-info"></i><h5>Orientação aos Pais</h5><p>Cuidados e desenvolvimento infantil.</p></div></div>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta text-center">
+<div class="container">
+<h2 class="fw-bold mb-4">Aqui a criança é cuidada com amor 💕</h2>
+<a href="#contato" class="btn btn-light btn-lg">Agendar Atendimento</a>
+</div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" style="background:#fff">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-7">
+
+<h2 class="fw-bold text-center mb-4">Agendamento</h2>
+
+<form class="card p-4">
+<input class="form-control mb-3" placeholder="Nome do responsável" required>
+<input class="form-control mb-3" placeholder="WhatsApp" required>
+<textarea class="form-control mb-3" placeholder="Idade da criança e motivo da consulta" rows="4"></textarea>
+<button class="btn btn-primary btn-lg w-100">Solicitar Contato</button>
+</form>
+
+</div>
+</div>
+</div>
+</section>
+
+<footer class="py-4 text-center">
+<p class="mb-0">
+© 2026 • Consultório Pediátrico Pequenos Cuidados • CRM nº 00000
+</p>
+</footer>
+
+<a href="https://wa.me/5521982846871" class="whatsapp-fixo" target="_blank">
+<i class="bi bi-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
